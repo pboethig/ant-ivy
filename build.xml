@@ -1,0 +1,27 @@
+<project name="Testproject" default="dist" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+  <description>
+    simple example build file
+  </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist" location="dist"/>
+
+
+<target name="init" depends="clean">
+    <ivy:settings file="ivysettings.xml"/>
+</target>
+
+<target name="resolve" depends="init">
+    <ivy:resolve/>
+</target>
+
+<target name="clean" description="Cleanup build directory">
+    
+</target>
+
+<target name="clean-all" depends="init,clean" description="Clean and purge caches">
+    <!-- Purge the ivy cache -->
+    <ivy:cleancache/>
+</target>
+</project>

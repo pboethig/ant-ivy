@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivysettings>
+	<properties file="${user.home}/.ant/config/build.properties"/>
+
+    <credentials host="${repo.host}" 
+     realm="${repo.realm}" 
+     username="${repo.username}" 
+     passwd="${repo.password}"/>
+    <credentials host="${publish.host}" 
+     realm="${publish.realm}" 
+     username="${publish.username}" 
+     passwd="${publish.password}"/>
+ <settings defaultResolver="public"/>
+ <resolvers>
+  <ibiblio name="public" m2compatible="true" useMavenMetadata="false" root="${repo.protocoll}://${repo.host}/content/repositories/php"/>
+  <url name="publish" m2compatible="true">
+      <artifact pattern="${repo.protocoll}://${publish.host}/content/repositories/releases/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+  </url>
+ </resolvers>
+ <modules/>
+</ivysettings>

@@ -1,0 +1,10 @@
+<ivy-module version="2.0">
+    <info organisation="com.test" module="test.php.project"/>
+    <publications>
+        <artifact type="zip" ext="zip"/>
+        <artifact type="pom" ext="pom"/>
+    </publications>
+    <dependencies>
+    	<dependency org="com-test" name="test" rev="1.1.1" transitive="false"/>
+    </dependencies>
+</ivy-module>
