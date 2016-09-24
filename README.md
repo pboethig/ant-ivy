@@ -12,7 +12,7 @@
 
   - run ant anit on the console in your projectroot
 
-See </var/www/html/lektionen/docker/testPHPProject/TestPhpProject/app/ivy.xml> for a tutorial
+See [Comllete tutorial](http://magento2-tuts.blogspot.de/2016/09/ant-retrieve-resolve-and-publish.html) for further infos
 
 
 
